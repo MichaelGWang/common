@@ -8,7 +8,7 @@ inline void time_delta(const struct timeval& begin, const struct timeval& end) {
     time_t delta_sec = end.tv_sec - begin.tv_sec;
     
     if (delta_usec < 0) {
-        delta_usec = -delta_sec;
+        delta_usec = -delta_usec;
         --delta_sec;
     }
 
